@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Anime Survey</title>
+        <meta content="initial-scale=1,width=device-width" name="viewport">
+        <meta charset="utf-8">
+        <link href="Survey.css" rel="stylesheet" type="text/css">
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </head>
+    <body>
+        <header>
+        <h1 id="title">Anime Survey Form</h1>
+        <p id="description">This is a small survey to check for the best Anime series in 2019</p>
+        </header>
+        <main>
+        <form id="survey-form" action="/action">
+            <label id="name-label" for="name">Name:</label>
+            <input type="text" placeholder="e.g. Nasser" id="name" required/>
+            <label id="email-label" for="email">Email:</label>
+            <input type="email" placeholder="example@yahoo.com" id="email" required/>
+            <label id="number-label" for="number">How many Anime series you watched?</label>
+            <input type="number" placeholder="Number" id="number" min="1" max="10" required/>
+            <label for="dropdown">Your favourite genre :</label>
+            <select name="genre" id="dropdown">
+                <option disabled value>Select genre</option>
+                <option value="shonen">Shonen</option>
+                <option value="Senen">Senen</option>
+                <option value="Hentai">Hentai</option>
+            </select>
+            <fieldset>
+                <legend>Choose the best :</legend>
+                <input type="radio" name="theBest" id="onePiece"value="onePiece"/><label for="onePiece">One Piece</label><br>
+                <input type="radio" name="theBest" id="Naruto"value="onePiece"/><label for="Naruto">Naruto</label><br>
+                <input type="radio" name="theBest" id="conan"value="onePiece"/><label for="conan">Detective Conan</label>
+            </fieldset>
+            <fieldset>
+                <legend>What do you like ?</legend>
+                <input type="checkbox"  value="deathNote" id="deathNote"/><label for="deathNote">Death Note</label><br>
+                <input type="checkbox"  value="Tokyo" id="Tokyo"/><label for="Tokyo">Tokyo Ghoul</label><br>
+                <input type="checkbox"  value="Titan" id="Titan"/><label for="Titan">Attack on Titan</label>
+            </fieldset>
+            <label for="comments">Comment:</label>
+            <textarea id="comments">Enter any comment</textarea>
+            <input type="submit" value="Submit All" id=submit>
+        </form>
+        </main>
+        <footer>
+            <h2>This survey form is designed by Mohamed Nasser 2019</h2>
+        </footer>
+    </body>
+</html>
